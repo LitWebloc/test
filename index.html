@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang=ru>
 <head>
@@ -12,7 +11,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body">
     <!--[if lt IE 8]>
         <h3 class="browserupgrade">Вы используйте слишком старый web-браузер, для использования данного сайта рекомендуем <a href="http://outdatedbrowser.com/ru">обновить свой браузер</a>.</h3>
     <![endif]-->
@@ -21,22 +20,49 @@
             <div class="row signIn text-center">
                 <div class="col-md-6 signIn-child">
                     <div class="form">
-                       <h5>ВОЙТИ В АККАУНТ</h5>
+                       <h5>ВОЙТИ В КАБИНЕТ</h5>
                         <form action="">
                             <label><small>ВВЕДИТЕ ЛОГИН</small>
                                 <input type="text"></label>
                             <label><small>ВВЕДИТЕ ВАШ ПАРОЛЬ</small>
                                 <input type="password"></label>
-                            <button>ВОЙТИ В АККАУНТ</button>
+                            <button id="account">ВОЙТИ В КАБИНЕТ</button>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-6 signIn-child gradiend">
-                    <h5>ВЫ ЗДЕСТЬ ВПЕРВЫЕ?</h5>
+                    <h5>ВЫ ЗДЕСЬ ВПЕРВЫЕ?</h5>
+                    <div class="icon"></div>
+                    <a href="#" id="register" class="botton">ЗАРЕГИСТРИРОВАТЬСЯ</a>
                 </div>
+            </div>
+            <div class="row toRegister text-center">
+                <div class="col-md-6 toRegister-child">
+                    <div class="form">
+                       <h5>ЗАРЕГИСТРИРОВАТЬСЯ</h5>
+                        <form action="">
+                            <label><small>ПРИДУМАЙТЕ ЛОГИН</small>
+                                <input type="text"></label>
+                            <label><small>ПРИДУМАЙТЕ ПАРОЛЬ</small>
+                                <input type="password"></label>
+                            <label><small>ПОВТОРИТЕ ПАРОЛЬ</small>
+                                <input type="password"></label>
+                            <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 toRegister-child gradiend">
+                    <h5>УЖЕ ЗАРЕГИСТРИРОВАННЫ?</h5>
+                    <div class="icon"></div>
+                    <a href="#" id="signIn" class="botton">ВОЙТИ В КАБИНЕТ</a>
+                </div>
+            </div>
+            <div class="row account">
+                <div class="col-md-12"><a href="#" id="exit" class="botton">ВЫЙТИ ИЗ КАБИНЕТА</a></div>
             </div>
         </div>
     </div>
-
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

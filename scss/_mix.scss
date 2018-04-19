@@ -4,7 +4,7 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
-@mixin bs($x:0,$y:2px,$z:4px,$shadow:#ed7e1b78) {
+@mixin bs($x:0,$y:0px,$z:6px,$shadow:#7e4e7a) {
   -webkit-box-shadow: $x $y $z $shadow;
      -moz-box-shadow: $x $y $z $shadow;
       -ms-box-shadow: $x $y $z $shadow;

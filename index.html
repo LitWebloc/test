@@ -6,8 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Вход в аккаунт или регистрация">
 <title>Тестовое задание</title>
-
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|PT+Sans+Caption|Rubik:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,48 +19,56 @@
                 <div class="col-md-6 signIn-child">
                     <div class="form">
                        <h5>ВОЙТИ В КАБИНЕТ</h5>
-                        <form action="">
+                        <form id="signIn" action="">
                             <label><small>ВВЕДИТЕ ЛОГИН</small>
-                                <input type="text"></label>
+                                <input type="text" name="login" required pattern="#[0-9A-Fa-f]{6}"></label>
                             <label><small>ВВЕДИТЕ ВАШ ПАРОЛЬ</small>
-                                <input type="password"></label>
-                            <button id="account">ВОЙТИ В КАБИНЕТ</button>
+                                <input type="password" name="password" required></label>
+                            <button type="button" id="accountbtn">ВОЙТИ В КАБИНЕТ</button>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-6 signIn-child gradiend">
                     <h5>ВЫ ЗДЕСЬ ВПЕРВЫЕ?</h5>
                     <div class="icon"></div>
-                    <a href="#" id="register" class="botton">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                    <a href="#" id="registerbtn" class="button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
                 </div>
             </div>
             <div class="row toRegister text-center">
                 <div class="col-md-6 toRegister-child">
                     <div class="form">
                        <h5>ЗАРЕГИСТРИРОВАТЬСЯ</h5>
-                        <form action="">
+                        <form id="toRegister" action="">
                             <label><small>ПРИДУМАЙТЕ ЛОГИН</small>
-                                <input type="text"></label>
+                                <input type="text" name="loginReg" required></label>
                             <label><small>ПРИДУМАЙТЕ ПАРОЛЬ</small>
-                                <input type="password"></label>
+                                <input type="password" name="passwordReg" required></label>
                             <label><small>ПОВТОРИТЕ ПАРОЛЬ</small>
-                                <input type="password"></label>
-                            <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                                <input type="password" name="passwordRepeatReg" required></label>
+                            <button id="toRegisterbtn" type="button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-6 toRegister-child gradiend">
                     <h5>УЖЕ ЗАРЕГИСТРИРОВАННЫ?</h5>
                     <div class="icon"></div>
-                    <a href="#" id="signIn" class="botton">ВОЙТИ В КАБИНЕТ</a>
+                    <a href="#" id="signInbtn" class="button">ВОЙТИ В КАБИНЕТ</a>
                 </div>
             </div>
             <div class="row account">
-                <div class="col-md-12"><a href="#" id="exit" class="botton">ВЫЙТИ ИЗ КАБИНЕТА</a></div>
+                <div class="col-md-12">
+                  <div class="icon"></div>
+                   <h2 class="text-center">
+                      Добро пожаловать 
+                       <span id="name"></span> !
+                   </h2>
+                    <button type="button" id="exit">ВЫЙТИ ИЗ КАБИНЕТА</button>
+                </div>
             </div>
         </div>
     </div>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/localstorage.js"></script>
 </body>
 </html>
